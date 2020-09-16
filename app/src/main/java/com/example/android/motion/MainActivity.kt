@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         EdgeToEdge.setUpRoot(findViewById(R.id.main))
         EdgeToEdge.setUpAppBar(findViewById(R.id.app_bar), toolbar)
 
-        Toast.makeText(this,"Hello from Android", Toast.LENGTH_LONG).show()
+        Toast.makeText(this,"Hello from  version 2", Toast.LENGTH_LONG).show()
 
         // Set up the fragment.
         if (savedInstanceState == null) {
