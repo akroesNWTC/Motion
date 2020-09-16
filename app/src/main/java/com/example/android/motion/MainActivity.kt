@@ -16,8 +16,11 @@
 
 package com.example.android.motion
 
+import android.app.ProgressDialog.show
+import android.app.ProgressDialog.show
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.commitNow
 import com.example.android.motion.ui.EdgeToEdge
@@ -34,6 +37,8 @@ class MainActivity : AppCompatActivity() {
         // Configure edge-to-edge display.
         EdgeToEdge.setUpRoot(findViewById(R.id.main))
         EdgeToEdge.setUpAppBar(findViewById(R.id.app_bar), toolbar)
+
+        Toast.makeText(this,"Hello from Android", Toast.LENGTH_LONG).show()
 
         // Set up the fragment.
         if (savedInstanceState == null) {
